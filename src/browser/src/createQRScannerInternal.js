@@ -1,6 +1,8 @@
 require('webrtc-adapter');
 var workerScript = require("raw-loader!../worker.min.js");
 
+console.log('createQRScannerInternal.js');
+
 module.exports = function(){
 
   var ELEMENTS = {
@@ -283,6 +285,7 @@ module.exports = function(){
         activeMediaStream = mediaStream;
         var video = getVideoPreview();
         video.src = URL.createObjectURL(mediaStream);
+        // video.srcObject = stream;
         success(calcStatus());
       }, function(err){
         // something bad happened
