@@ -461,3 +461,8 @@ The manual tests for the library are available without the cordova test project:
 - `npm run test:library`
 
 The build for this repo currently only confirms javascript style and syntax with [jshint](https://github.com/jshint/jshint). Pull requests with additional automated test methods are welcome!
+
+
+License
+---------------------
+Distributed under the [MIT software license](http://www.opensource.org/licenses/mit-license.php).
